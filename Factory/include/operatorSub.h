@@ -1,8 +1,16 @@
-class COperatorSub : public operation
+#ifndef __OPERATORSUB__
+#define __OPERATORSUB__
+
+#include "operation.h"
+
+template<class T>
+class COperatorSub : public COperation<T>
 {
 public:
-	COperatorSub()
-	~CoperatorSub()
+	COperatorSub();
+	~COperatorSub();
 public:
-	virtual T getResult(const *T, const *T);
+	virtual T getResult(const T*, const T*);
 };
+
+#endif

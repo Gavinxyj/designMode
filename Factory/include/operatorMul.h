@@ -1,4 +1,10 @@
-class COperatorMul : public operation
+#ifndef __OPERATORMUL__
+#define __OPERATORMUL__
+
+#include "operation.h"
+
+template<class T>
+class COperatorMul : public COperation<T>
 {
 public:
 	COperatorMul();
@@ -6,3 +12,5 @@ public:
 public:
 	virtual T getResult(const T*, const T*);
 };
+
+#endif
