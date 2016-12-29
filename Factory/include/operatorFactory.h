@@ -11,7 +11,7 @@ public:
 	~COperatorFactory();
 public:
 
-	COperation<T> createOperator(char operate);
+	COperation<T>* createOperator(char operate);
 };
 
 #endif

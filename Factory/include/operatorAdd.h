@@ -8,7 +8,7 @@ class COperatorAdd : public COperation<T>
 {
 public:
 	COperatorAdd();
-	~COperatorAdd();
+  ~COperatorAdd();
 public:
 	virtual T getResult(const T*, const T*);	
 };

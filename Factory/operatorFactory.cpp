@@ -17,15 +17,17 @@ COperatorFactory<T>::~COperatorFactory()
 }
 
 template<class T>
-COperation<T> COperatorFactory<T>::createOperator(char operate)
+COperation<T>* COperatorFactory<T>::createOperator(char operate)
 {
-	COperation<T> *oper = 0;
+	COperation<T> *oper;
 	switch(operate)
 	{
 		case '+':
-			oper = new COperatorAdd<T>();
+			oper = new COperatorAdd<T>;
+		//	COperatorAdd<T>add;
+		//	oper = add;
 			break;
-		case '-':
+	/*	case '-':
 			oper = new COperatorSub<T>();
 			break;
 		case '*':
@@ -33,9 +35,9 @@ COperation<T> COperatorFactory<T>::createOperator(char operate)
 			break;
 		case '/':
 			oper = new COperatorDiv<T>();
-			break;
-		default:
-			*oper = 0;
+			break;*/
+	//	default:
+			
 	}
 	
 	return oper;

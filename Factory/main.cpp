@@ -3,9 +3,9 @@
 #include "operation.cpp"
 int main(void)
 {
-	//COperation<int> oper;
+	COperation<int> *oper;
 	COperatorFactory<int>factory;
-	//factory.createOperator('+');
+	oper = factory.createOperator('+');
 	std::cout<<"hello world!"<<std::endl;
 	return 0;
 }
