@@ -24,10 +24,8 @@ COperation<T>* COperatorFactory<T>::createOperator(char operate)
 	{
 		case '+':
 			oper = new COperatorAdd<T>;
-		//	COperatorAdd<T>add;
-		//	oper = add;
 			break;
-	/*	case '-':
+		case '-':
 			oper = new COperatorSub<T>();
 			break;
 		case '*':
@@ -35,9 +33,9 @@ COperation<T>* COperatorFactory<T>::createOperator(char operate)
 			break;
 		case '/':
 			oper = new COperatorDiv<T>();
-			break;*/
-	//	default:
-			
+			break;
+		default:
+			oper = 0;
 	}
 	
 	return oper;

@@ -1,7 +1,18 @@
-#include "operatorAdd.h"
+#include "operatorSub.h"
 
 template<class T>
-T COperatorAdd<T>::getResult(const T* a, const T* b)
+COperatorSub<T>::COperatorSub()
+{
+	
+}
+
+template<class T>
+COperatorSub<T>::~COperatorSub()
+{
+	
+}
+template<class T>
+T COperatorSub<T>::getResult(const T* a, const T* b)
 {
 	return *a - *b;	
 }
