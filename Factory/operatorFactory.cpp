@@ -16,6 +16,7 @@ COperatorFactory<T>::~COperatorFactory()
 	
 }
 
+
 template<class T>
 COperation<T>* COperatorFactory<T>::createOperator(char operate)
 {
