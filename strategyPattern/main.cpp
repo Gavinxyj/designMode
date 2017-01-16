@@ -4,6 +4,7 @@ int main(void)
 {
 	
 	CCashFactory factory;
+
 	//²»´òÕÛ
 	CCashSuper *super = factory.createAcceptCash("normal");
 	double ret = super->acceptCash(100);
